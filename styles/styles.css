@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: #f9f9f9;
+}
+.button{
+    width: 10%;
+    margin-top: 1rem;
+    background: #f9f9f9;
+}
+.conteudo{
+    position: absolute;
+    margin: 4rem 2% 2% 2%;
+}
+.calendario{
+    text-align: center;
+    width: 70%;
+    display: grid;
+}
+table{
+    width: 100%;
+}
+.conteudo .calendario header{
+    position: relative;
+    width: 100%;
+}
+h2{
+    margin-top: 3rem;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    width: 100%;
+}
+.btn-ant, .btn-pro{
+    position: absolute;
+    top: 50%;
+    height: 32px;
+    width: 32px;
+    line-height: 32px;
+    margin-top: -16px;
+    border: 2px solid #a5a5a5;
+    border-radius: 30%;
+    color: #a5a5a5;
+    font-size: 16px;
+    font-weight: bold;
+}
+.btn-ant{
+    left: 1rem;
+}
+.btn-pro{
+    right: 1rem;
+}
+.btn-ant:hover, .btn-pro:hover{
+    background: #a5a5a5;
+    color: #f9f9f9;
+}
+.calendario table{
+    margin-top: 20px;
+    border-collapse: collapse;
+    display: grid;
+    width: 100%;
+}
+
+.calendario thead{
+    background-color: #ffffff;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-bottom: 2px solid red;
+}
+.calendario thead td{
+    height: 4rem;
+}
+.calendario td{
+    height: 3rem;
+    text-align: center;
+    width: 9rem;
+}
+.calendario tbody td{
+    cursor:pointer;
+}
+.calendario tbody td:hover{
+    background: rgba(156, 170, 177, 0.805);
+}
+.calendario table .dia_atual{
+    border: 2px solid rgb(0, 0, 0);
+}
+.calendario .mes_ant, .calendario .prox_mes{
+    color: #cbd1d2;
+}
+.event::after{
+    content: 'Race';
+    font-size: 0.4rem;
+    background: rgb(0, 0, 0);
+    color: #f9f9f9;
+    width: 100%;
+    height: 0.4rem;
+    display: grid;
+}
+.aba-eventos{
+    float: right;
+    border-left: 1px solid #000;
+    width: 28%;
+    height: 100vh;
+    display: grid;
+    background: #ffffff;
+}
+.conteudo-aba{
+    margin: 1rem 1rem 1rem 1rem;
+}
+.conteudo-aba h4{
+    font-weight: 600;
+    font-size: 1.2rem;
+    text-align: center;
+}
+.conteudo-aba li{
+    list-style: none;
+}
